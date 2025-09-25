@@ -1,17 +1,64 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Inicio</ion-title>
+  <ion-toolbar color="primary">
+    <ion-title>Inteligencia Financiera</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
-  <h2>Bienvenido 👋</h2>
-  <p>Aquí empieza tu app de inteligencia financiera 💰</p>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Bienvenido</ion-card-title>
+      <ion-card-subtitle>Tu camino hacia la libertad financiera</ion-card-subtitle>
+    </ion-card-header>
 
-  <ion-button expand="block" routerLink="/tabs/educacion">
-    Ir a Educación
-  </ion-button>
-  <ion-button expand="block" routerLink="/tabs/presupuesto">
-    Ir a Presupuesto
-  </ion-button>
+    <ion-card-content>
+      <p>
+        La inteligencia financiera es la capacidad de tomar decisiones acertadas con el dinero.
+        En un mundo donde el consumo rápido y las deudas son comunes, aprender a administrar
+        correctamente los ingresos es fundamental para lograr estabilidad y crecimiento.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>¿Por qué es importante?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        Muchos jóvenes reciben ingresos sin un plan claro para administrarlos. Esto puede llevar
+        a gastos innecesarios, deudas y falta de ahorros. 
+      </p>
+      <p>
+        Con hábitos financieros saludables, es posible:
+      </p>
+      <ul>
+        <li>Ahorrar de manera constante.</li>
+        <li>Evitar endeudarse en exceso.</li>
+        <li>Invertir en oportunidades seguras.</li>
+        <li>Construir un futuro estable y próspero.</li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Primeros pasos</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        Empieza por registrar tus gastos diarios, establece un presupuesto y fija metas de ahorro.
+        La clave está en la disciplina y la constancia, incluso si los ingresos son pequeños.
+      </p>
+      <p>
+        Recuerda: <strong>cada decisión financiera que tomes hoy impactará tu futuro</strong>.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <div class="cta-container">
+    <ion-button expand="block" color="success">
+      ¡Comienza tu viaje financiero!
+    </ion-button>
+  </div>
 </ion-content>

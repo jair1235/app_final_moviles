@@ -1,10 +1,91 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Educación</ion-title>
+  <ion-toolbar color="primary">
+    <ion-title>Gestión de Presupuesto</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
-  <h2>Recursos Educativos 📚</h2>
-  <p>Aquí verás tips y artículos sobre finanzas personales.</p>
+<ion-content class="ion-padding presupuesto-page">
+
+  <!-- Resumen financiero -->
+  <section class="resumen">
+    <h2>Resumen del Mes</h2>
+    <div class="resumen-cards">
+      <ion-card class="ingresos">
+        <ion-card-header>
+          <ion-card-title>Ingresos</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <h3>$1,500,000</h3>
+          <p>Salario, ayudas y otros ingresos</p>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card class="gastos">
+        <ion-card-header>
+          <ion-card-title>Gastos</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <h3>$950,000</h3>
+          <p>Alimentación, transporte, ocio...</p>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card class="ahorro">
+        <ion-card-header>
+          <ion-card-title>Ahorro</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <h3>$550,000</h3>
+          <p>Disponible para inversión</p>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </section>
+
+  <!-- Gráfico de distribución (mock) -->
+  <section class="grafico">
+    <h2>Distribución de Gastos</h2>
+    <div class="grafico-placeholder">
+      <p>[Gráfico circular aquí]</p>
+    </div>
+  </section>
+
+  <!-- Categorías de gastos -->
+  <section class="categorias">
+    <h2>Categorías</h2>
+    <ion-list>
+      <ion-item>
+        <ion-icon name="restaurant-outline" slot="start"></ion-icon>
+        <ion-label>Alimentación</ion-label>
+        <ion-note slot="end" color="danger">$300,000</ion-note>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="bus-outline" slot="start"></ion-icon>
+        <ion-label>Transporte</ion-label>
+        <ion-note slot="end" color="danger">$150,000</ion-note>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="school-outline" slot="start"></ion-icon>
+        <ion-label>Educación</ion-label>
+        <ion-note slot="end" color="danger">$200,000</ion-note>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="game-controller-outline" slot="start"></ion-icon>
+        <ion-label>Ocio</ion-label>
+        <ion-note slot="end" color="danger">$100,000</ion-note>
+      </ion-item>
+    </ion-list>
+  </section>
+
+  <!-- Consejos -->
+  <section class="tips">
+    <h2>Consejos Financieros</h2>
+    <ul>
+      <li>Separa el 20% de tus ingresos para el ahorro antes de gastar.</li>
+      <li>Establece un límite para tus gastos de ocio.</li>
+      <li>Considera invertir en educación o cursos que mejoren tus habilidades.</li>
+      <li>Monitorea semanalmente tu presupuesto para no perder el control.</li>
+    </ul>
+  </section>
+
 </ion-content>

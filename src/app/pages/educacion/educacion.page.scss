@@ -1,0 +1,83 @@
+.educacion-page {
+  --background: #f9fafb;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+
+  section {
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    font-weight: bold;
+    color: #2b6cb0;
+    border-left: 4px solid #2b6cb0;
+    padding-left: 0.5rem;
+  }
+
+  p {
+    line-height: 1.6;
+    font-size: 0.95rem;
+    color: #444;
+  }
+
+  /* Artículos */
+  .articulos ion-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #3182ce;
+  }
+
+  .articulos ion-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Videos */
+  .videos ion-card {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .videos ion-img {
+    max-height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #2b6cb0;
+  }
+
+  .videos ion-button {
+    margin-top: 0.5rem;
+    --border-radius: 10px;
+  }
+
+  /* Frases */
+  .frases ion-card {
+    background: linear-gradient(135deg, #edf2f7, #e2e8f0);
+    border-left: 5px solid #4299e1;
+  }
+
+  .frases blockquote {
+    font-style: italic;
+    font-size: 1rem;
+    color: #2d3748;
+    margin: 0;
+  }
+
+  /* Tip interactivo */
+  .tip-interactivo ion-card {
+    border: 1px solid #cbd5e0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    background: #ffffff;
+  }
+
+  .tip-interactivo ion-card-title {
+    color: #2f855a;
+    font-weight: bold;
+  }
+
+  .tip-interactivo ion-button {
+    --border-radius: 12px;
+    margin-top: 0.8rem;
+  }
+}

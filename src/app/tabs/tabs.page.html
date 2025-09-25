@@ -1,17 +1,19 @@
 <ion-tabs>
+  <ion-router-outlet></ion-router-outlet>
+
   <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="inicio">
-      <ion-icon name="home"></ion-icon>
+    <ion-tab-button tab="inicio" [routerLink]="['/tabs/inicio']">
+      <ion-icon name="home-outline"></ion-icon>
       <ion-label>Inicio</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="educacion">
-      <ion-icon name="book"></ion-icon>
+    <ion-tab-button tab="educacion" [routerLink]="['/tabs/educacion']">
+      <ion-icon name="book-outline"></ion-icon>
       <ion-label>Educación</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="presupuesto">
-      <ion-icon name="wallet"></ion-icon>
+    <ion-tab-button tab="presupuesto" [routerLink]="['/tabs/presupuesto']">
+      <ion-icon name="wallet-outline"></ion-icon>
       <ion-label>Presupuesto</ion-label>
     </ion-tab-button>
   </ion-tab-bar>
